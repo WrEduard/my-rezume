@@ -701,7 +701,7 @@ a:visited {
   }
 
   html {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .wrapper {
@@ -712,6 +712,18 @@ a:visited {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html {
+    font-size: 14px;
   }
 }
 
@@ -757,7 +769,7 @@ a:visited {
   }
 
   html {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
