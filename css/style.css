@@ -347,6 +347,14 @@ h6 {
   font-size: 1rem;
 }
 
+.my-info-right-sidebar__location a {
+  color: black;
+}
+
+.my-info-right-sidebar__location a:visited {
+  color: black;
+}
+
 .my-info-right-sidebar__age {
   margin-left: 5rem;
   font-size: 1rem;
@@ -770,6 +778,22 @@ a:visited {
 
   html {
     font-size: 15px;
+  }
+}
+
+@media print {
+  .left-sidebar {
+    color: black !important;
+  }
+
+  .contacts-left-sidebar__item a {
+    font-size: 12px;
+    color: black !important;
+  }
+
+  html {
+    font-size: 12px;
+    color: black !important;
   }
 }
 
