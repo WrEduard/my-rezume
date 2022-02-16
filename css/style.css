@@ -99,49 +99,18 @@ h6 {
   color: red;
 }
 
-/* =========== variables =========== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* ============================================================================== */
-
-/* =========== adaptiv-value =========== */
-
-/* div {
-  @include adaptiv-value("font-size", 20, 10, 0);
-} */
-
-/* 
-где: 
-"font-size" - свойство которое нужно адаптировать; 
-20 - исходный размер по макету;
-10 - минимальный размер, который будет адекватно работать на минимальных экранах;
-0 - режим один из трех (type==1 type==2 type==0)
- */
-
 /* =========== icons-font =========== */
 
 @font-face {
   font-family: "icons";
-  src: url("../fonts/icons-font.ttf?jrsckx") format("truetype"), url("../fonts/icons-font.woff?jrsckx") format("truetype");
+  src: url("../fonts/icons-font.ttf?jrsckx") format("truetype"),
+    url("../fonts/icons-font.woff?jrsckx") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^=_icon],
+[class^="_icon"],
 [class*=" _icon"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icons" !important;
@@ -237,11 +206,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 350px;
   padding-bottom: 20px;
@@ -255,7 +224,7 @@ h6 {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 5px;
   border: #ecebeb 2px solid;
 }
@@ -278,8 +247,8 @@ h6 {
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear;
   -webkit-transform: scale(1.4);
-      -ms-transform: scale(1.4);
-          transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
   color: #f5f100;
   font-weight: 900;
 }
@@ -300,18 +269,6 @@ h6 {
 }
 
 /* =========== main =========== */
-
-/* div {
-  @include adaptiv-value("font-size", 20, 10, 0);
-} */
-
-/* 
-где: 
-"font-size" - свойство которое нужно адаптировать; 
-20 - исходный размер по макету;
-10 - минимальный размер, который будет адекватно работать на минимальных экранах;
-0 - режим один из трех (type==1 type==2 type==0)
- */
 
 .right-sidebar {
   padding-left: 30px;
@@ -337,8 +294,8 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 20px;
   font-size: 1rem;
 }
@@ -365,11 +322,11 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #4777cf;
   font-size: 1.5rem;
   margin-top: 30px;
@@ -382,8 +339,8 @@ h6 {
 
 .right-sidebar-title__line {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
   height: 2px;
   background: #4777cf;
   margin: 0 5px;
@@ -451,6 +408,15 @@ h6 {
   font-weight: 900;
   text-decoration: underline;
 }
+.projects-right-sidebar__info {
+  line-height: 1.2;
+}
+.projects-right-sidebar__info > a {
+  color: blue;
+}
+.projects-right-sidebar__info > a:visited {
+  color: blue;
+}
 
 /* =========== main =========== */
 
@@ -491,171 +457,99 @@ a:visited {
 
 @media (max-width: 1140px) {
   .left-sidebar {
-    padding-left: calc(
-        10px + 20 *
-          ((100vw - 320px) /820)
-      );
+    padding-left: calc(10px + 20 * ((100vw - 320px) / 820));
   }
 
   .left-sidebar {
-    padding-right: calc(
-        10px + 20 *
-          ((100vw - 320px) /820)
-      );
+    padding-right: calc(10px + 20 * ((100vw - 320px) / 820));
   }
 
   .left-sidebar hr {
-    margin-bottom: calc(
-        15px + 15 *
-          ((100vw - 320px) /820)
-      );
+    margin-bottom: calc(15px + 15 * ((100vw - 320px) / 820));
   }
 
   .left-sidebar hr {
-    margin-top: calc(
-        15px + 15 *
-          ((100vw - 320px) /820)
-      );
+    margin-top: calc(15px + 15 * ((100vw - 320px) / 820));
   }
 
   .photo-left-sidebar {
-    height: calc(
-        250px + 100 *
-          ((100vw - 320px) /820)
-      );
+    height: calc(250px + 100 * ((100vw - 320px) / 820));
   }
 
   .photo-left-sidebar {
-    padding-bottom: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    padding-bottom: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .photo-left-sidebar {
-    padding-top: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    padding-top: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .contacts-left-sidebar__item {
-    margin-bottom: calc(
-        5px + 5 *
-          ((100vw - 320px) /820)
-      );
+    margin-bottom: calc(5px + 5 * ((100vw - 320px) / 820));
   }
 
   .contacts-left-sidebar__item a::before {
-    margin-right: calc(
-        8px + 7 *
-          ((100vw - 320px) /820)
-      );
+    margin-right: calc(8px + 7 * ((100vw - 320px) / 820));
   }
 
   .title-left-sidebar {
-    margin-bottom: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    margin-bottom: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar {
-    padding-left: calc(
-        10px + 20 *
-          ((100vw - 320px) /820)
-      );
+    padding-left: calc(10px + 20 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar {
-    padding-right: calc(
-        10px + 20 *
-          ((100vw - 320px) /820)
-      );
+    padding-right: calc(10px + 20 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar {
-    padding-top: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    padding-top: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar {
-    padding-bottom: calc(
-        5px + 5 *
-          ((100vw - 320px) /820)
-      );
+    padding-bottom: calc(5px + 5 * ((100vw - 320px) / 820));
   }
 
   .my-info-right-sidebar {
-    padding-top: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    padding-top: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar-title {
-    margin-top: calc(
-        15px + 15 *
-          ((100vw - 320px) /820)
-      );
+    margin-top: calc(15px + 15 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar-title {
-    margin-bottom: calc(
-        5px + 5 *
-          ((100vw - 320px) /820)
-      );
+    margin-bottom: calc(5px + 5 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar-subtitle-2 {
-    margin-bottom: calc(
-        5px + 5 *
-          ((100vw - 320px) /820)
-      );
+    margin-bottom: calc(5px + 5 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar-list li {
-    padding-top: calc(
-        2px + 3 *
-          ((100vw - 320px) /820)
-      );
+    padding-top: calc(2px + 3 * ((100vw - 320px) / 820));
   }
 
   .right-sidebar-list li {
-    padding-bottom: calc(
-        2px + 3 *
-          ((100vw - 320px) /820)
-      );
+    padding-bottom: calc(2px + 3 * ((100vw - 320px) / 820));
   }
 
   .work-experience-right-sidebar {
-    margin-top: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    margin-top: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .education-right-sidebar__education {
-    margin-top: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    margin-top: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   .courses-right-sidebar__courses {
-    margin-top: calc(
-        10px + 10 *
-          ((100vw - 320px) /820)
-      );
+    margin-top: calc(10px + 10 * ((100vw - 320px) / 820));
   }
 
   body {
-    padding: calc(
-        5px + 5 *
-          ((100vw - 320px) /820)
-      );
+    padding: calc(5px + 5 * ((100vw - 320px) / 820));
   }
 }
 
@@ -697,11 +591,11 @@ a:visited {
   .my-info-right-sidebar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .my-info-right-sidebar__age {
@@ -718,8 +612,8 @@ a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -746,8 +640,8 @@ a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .education-right-sidebar__education {
@@ -756,8 +650,8 @@ a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .courses-right-sidebar__courses {
@@ -766,8 +660,8 @@ a:visited {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .work-experience-right-sidebar__period,
@@ -797,4 +691,6 @@ a:visited {
   }
 }
 
-.webp body{ background-image: url(../img/bg.webp); }
+.webp body {
+  background-image: url(../img/bg.webp);
+}
